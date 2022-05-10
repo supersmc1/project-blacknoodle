@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin:0;padding:0;}
+    #root{
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .logo{
+      width: 1920px;
+      height: 122px;
+      border: 1px solid black;
+    }
+
+    .logo>div{
+      width: 313px;
+      height: 112px;
+      background-color: #ccc;
+    }
+    .menu{
+      width: 1920px;
+      height: 104px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .dong{
+      width: 1920px;
+      height: 532px;
+      border: 1px solid black;
+    }
+
+    .mid{
+      width: 919px;
+      height: 137px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .mid2{
+      width: 1920px;
+      height: 478px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mid2>div{
+      width: 576px;
+      height: 478px;
+      background-color: #ccc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .mid2>div>div{
+      width: 244px;
+      height: 78px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+    .mid3{
+      width: 588px;
+      height: 187px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mid3>div:nth-child(1){
+      width: 63px;
+      height: 123px;
+      border: 1px solid black;
+    }
+
+    .slide{
+      width: 1920px;
+      height: 534px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .jjam{
+      width: 546px;
+      height: 534px;
+      border: 1px solid black;
+    }
+
+    .jjam>div:nth-child(1){
+      width: 546px;
+      height: 383px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .jjam>div:nth-child(1)>div:nth-child(1){
+      width: 153px;
+      height: 288px;
+      border: 1px solid black;
+    }
+    .jjam>div:nth-child(1)>div:nth-child(2){
+      width: 393px;
+      height: 288px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .jjam>div:nth-child(1)>div:nth-child(2)>div{
+      width: 302px;
+      height: 56px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .jjam>div:nth-child(2){
+      width: 546px;
+      height: 148px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .jjam>div:nth-child(2)>div{
+      width: 66px;
+      height: 66px;
+      border: 1px solid black;
+    }
+
+
+
+
+    .jja{
+      width: 755px;
+      height: 534px;
+      border: 1px solid black;
+    }
+
+    .jja>div:nth-child(1){
+      width: 755px;
+      height: 383px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .jja>div:nth-child(1)>div:nth-child(1){
+      width: 291px;
+      height: 288px;
+      border: 1px solid black;
+    }
+    .jja>div:nth-child(1)>div:nth-child(2){
+      width: 393px;
+      height: 288px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .jja>div:nth-child(1)>div:nth-child(2)>div{
+      width: 302px;
+      height: 56px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .jja>div:nth-child(2){
+      width: 755px;
+      height: 148px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .jja>div:nth-child(2)>div{
+      width: 66px;
+      height: 66px;
+      border: 1px solid black;
+    }
+
+    .bock{
+      width: 459px;
+      height: 534px;
+      border: 1px solid black;
+    }
+
+    .footer{
+      width: 1920px;
+      height: 247px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .footer>div:nth-child(1){
+      width: 313px;
+      height: 112px;
+      border: 1px solid black;
+    }
+
+    .footer>div:nth-child(2){
+      width: 648px;
+      height: 131px;
+      border: 1px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+
+    <div class="logo">
+      <div>이미지</div>
+    </div>
+
+    <div class="menu">
+      <div>매장소개</div>
+      <div>메뉴</div>
+      <div>창업문의</div>
+      <div>고객센터</div>
+    </div>
+
+    <div class="dong">동영상</div>
+
+    <div class="mid">
+      <div>최고의 서비스 다정한 홍콩반점</div>
+    </div>
+
+    <div class="mid2">
+      <div>
+        <div>신선한재료</div>
+      </div>
+      <div>
+        <div>합리적인 가격</div>
+      </div>
+      <div>
+        <div>친절한응대</div>
+      </div>
+    </div>
+
+    <div class="mid3">
+      <div></div>
+      <div>HOT PICK</div>
+    </div>
+
+    <div class="slide">
+
+      <div class="jjam">
+        <div>
+          <div>이미지</div>
+          <div>
+            <div>문어짬뽕</div>
+            <div>PRISE : 8500$</div>
+          </div>
+        </div>
+        <div>
+          <div>배민</div>
+          <div>요기요</div>
+          <div>쿠팡이츠</div>
+        </div>
+      </div>
+
+      <div class="jja">
+        <div>
+          <div>이미지</div>
+          <div>
+            <div>문어짬뽕</div>
+            <div>PRICE : 8500$</div>
+          </div>
+        </div>
+        <div>
+          <div>배민</div>
+          <div>요기요</div>
+          <div>쿠팡이츠</div>
+        </div>
+      </div>
+
+      <div class="bock">
+        <div></div>
+        <div>
+          <div>배민</div>
+          <div>요기요</div>
+          <div>쿠팡이츠</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div>이미지</div>
+      <div>(주)만충코리아|사업자등록번호 211-86-00870|대표이사 손만충
+        주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층|팩스: 02-511-3864
+        본사 대표전화 및 가맹상담전화 : 02-549-3864| 가맹상담전화: 02-3447-0410
+        고객센터: 1544-2360|제휴문의 : cs@theborn.co.kr
+        
+        </div>
+    </div>
+  </div>
+</body>
+</html>
