@@ -1,0 +1,136 @@
+.third{
+  width: 100vw;
+  height: 65vh;
+}
+
+.tops{
+  width: 100vw;
+  height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #9E2428;
+  font-family: 'BMEuljiro10yearslater';
+  font-size: 2rem;
+}
+
+.bottoms{
+  width: 100vw;
+  height: 45vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  overflow: hidden;
+}
+
+.arrowleft{
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  rgb(170, 18, 18);
+  cursor: pointer;
+}
+
+.arrowright{
+  width: 5vw;
+  height: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:  rgb(170, 18, 18);
+  cursor: pointer;
+
+  
+
+}
+.slider{
+  width: 60vw;
+  height: 40vh;
+  overflow: hidden;
+  position: relative;
+  border:5px solid rgb(170, 18, 18);
+}
+
+.slides{
+  width:240vw;
+  height: 40vh;
+  display: flex;
+  position:absolute;
+  left: 0px;
+  top: 0px;
+  transition: 0.5s ease-out;
+}
+
+.slides>li{
+  width: 60vw;
+  height: 40vh;
+  list-style-type: none;
+  margin-left: 0px;
+}
+
+.slides>li>img{
+  width: 60vw;
+  height: 40vh;
+}
+
+@media (max-width:1300px) {
+ .third{
+  height: 50vh;
+ }
+ .tops{
+  height: 15vh;
+}
+
+
+.bottoms{
+  height: 35vh;
+}
+
+.slider{
+  height: 30vh;
+}
+
+.slides{
+  height: 30vh;
+  display: flex;
+}
+
+.slides>li{
+  height: 30vh;
+}
+
+.slides>li>img{
+  height: 30vh;
+}
+}
+
+
+@media (max-width:550px) {
+  .bottoms{
+    height: 30vh;
+  }
+  
+  .slider{
+    height: 25vh;
+  }
+  
+  .slides{
+    height: 25vh;
+    display: flex;
+  }
+  
+  .slides>li{
+    height: 25vh;
+  }
+  
+  .slides>li>img{
+    height: 25vh;
+  }
+  .third{
+    height: 45vh;
+  }
+}
+

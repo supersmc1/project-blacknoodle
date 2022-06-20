@@ -4,440 +4,191 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./CSS/1-first.css">
+  <link rel="stylesheet" href="./CSS/2-second.css">
+  <link rel="stylesheet" href="./CSS/3-third.css">
+  <link rel="stylesheet" href="./CSS/4-fourth.css">
+  <link rel="stylesheet" href="./CSS/5-fifth.css">
+  <link rel="stylesheet" href="./CSS/6-sixth.css">
   <title>Document</title>
   <style>
-    *{margin:0;padding:0;}
+    @font-face {
+    font-family: 'BMEuljiro10yearslater';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/BMEuljiro10yearslater.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    @font-face {
+    font-family: 'BMEULJIRO';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/BMEULJIRO.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+    *{
+      margin: 0;
+      padding: 0; 
+    }
     #root{
       width: 100vw;
-      height: 100vh;
-    }
-
-    .logo{
-      width: 1920px;
-      height: 122px;
-    }
-
-    .logo>div{
-      width: 313px;
-      height: 112px;
-      background-image: url(./imege/Group\ 10.png);
-      margin: 5px;
-    }
-    .menu{
-      width: 1920px;
-      height: 104px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #C80000;
-      color: white;
-      font-size: 20px;
-    }
-
-    .menu>div{
-      margin:150px;
-    }
-    .dong{
-      width: 1920px;
-      height: 532px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.925);
-    }
-
-    .dong>div{
-      width: 1000px;
-      height: 450px;
-      background-image: url(./imege/1652245631.gif);
-      background-repeat: no-repeat;
+      height: 454vh;
+      background-image: url(./image/testback.jpg);
       background-size: cover;
-      background-position: center;
-    }
-
-    .mid{
-      width: 500px;
-      height: 137px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #C80000;
-      font-size: 30px;
-      font-weight: bold;
-      color: white;
-      margin-top: 50px;
-
-    }
-    .mid2{
-      width: 1920px;
-      height: 478px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-
-    }
-
-    .mid2>div{
-      width:450px;
-      height: 450px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 50px;
-    }
-
-    .mid2>div:nth-child(1){
-      background-image:url(./imege/vegetables-752153_960_720.png);
-    }
-    
-    .mid2>div:nth-child(2){
-      background-image:url(./imege/hands-1923185_960_720.png);
-      background-position: center;
-    }
-
-    .mid2>div:nth-child(3){
-      background-image:url(./imege/49428984-레스토랑-케이터링-서비스-웨이트리스-서빙-연회-테이블\ 1.png);
-    }
-    
-    .mid2>div>div{
-      width: 244px;
-      height: 78px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color:rgba(208, 207, 207, 0.36);
-      backdrop-filter:blur(30px);
-      border-radius: 20px;
-      font-size: 30px;
-      font-weight: bold;
-
-    }
-    .mid3{
-      width: 400px;
-      height: 150px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 50px;
-      background-color: #C80000;
-      font-size: 50px;
-      color: white;
-      font-weight: bold;
-    }
-
-    .mid3>div:nth-child(1){
-      width: 63px;
-      height: 123px;
-      background-image: url(./imege/Vector\ 9.png);
-      margin-right: 30px;
-    }
-
-    .slide{
-      width: 1920px;
-      height: 660px;
-      border: 1px solid black;
-      display: flex;
-      justify-content:center;
-      align-items: center;
-      overflow: hidden;
-    }
-
-    .slide>div{
-      margin-left: 100px;
-      border: 1px solid red;
-      font-size: 30px;
-    }
-
-    .jja{
-      width: 755px;
-      height: 534px;
-    }
-
-    .jja>div:nth-child(1){
-      width: 755px;
-      height: 383px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-    }
-
-    .jja>div:nth-child(1)>div:nth-child(1){
-      width: 291px;
-      height: 288px;
-      border-radius: 20px;
-      background-image: url(./imege/화면\ 캡처\ 2022-03-31\ 174439\ 1.png);
-    }
-    .jja>div:nth-child(1)>div:nth-child(2){
-      width: 393px;
-      height: 288px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .jja>div:nth-child(1)>div:nth-child(2)>div{
-      width: 302px;
-      height: 56px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .jja>div:nth-child(2){
-      width: 755px;
-      height: 148px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .jja>div:nth-child(2)>div{
-      width: 66px;
-      height: 66px;
-      margin-left: 20px;
-
-    }
-
-    .jjam{
-      width: 755px;
-      height: 534px;
-    }
-
-    .jjam>div:nth-child(1){
-      width: 755px;
-      height: 383px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
-    }
-
-    .jjam>div:nth-child(1)>div:nth-child(1){
-      width: 291px;
-      height: 288px;
-      border-radius: 20px;
-      background-image: url(./imege/화면\ 캡처\ 2022-03-31\ 175310\ 1\ \(1\).png);
       background-repeat: no-repeat;
     }
-    .jjam>div:nth-child(1)>div:nth-child(2){
-      width: 393px;
-      height: 288px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .jjam>div:nth-child(1)>div:nth-child(2)>div{
-      width: 302px;
-      height: 56px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .jjam>div:nth-child(2){
-      width: 755px;
-      height: 148px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .jjam>div:nth-child(2)>div{
-      width: 66px;
-      height: 66px;
-      margin-left: 20px;
-     
-
-
+    @media (max-width:1300px) {
+      #root{
+        height: 420vh;
+      }
     }
 
-    .bock{
-      width: 755px;
-      height: 534px;
+    @media (max-width:1000px) {
+      #root{
+        height: 400vh;
+      }
+    }
+    @media (max-width:1000px) {
+      #root{
+        height: 380vh;
+      }
+    }
+    @media (max-width:500px) {
+      #root{
+        height: 370vh;
+      }
     }
 
-    .bock>div:nth-child(1){
-      width: 755px;
-      height: 383px;
-      display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+    .second{
+      margin-top: 50px;
     }
 
-    .bock>div:nth-child(1)>div:nth-child(1){
-      width: 291px;
-      height: 288px;
-      background-image: url(./imege/화면\ 캡처\ 2022-03-31\ 160609\ 1.png);
-    }
-    .bock>div:nth-child(1)>div:nth-child(2){
-      width: 393px;
-      height: 288px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-    .bock>div:nth-child(1)>div:nth-child(2)>div{
-      width: 302px;
-      height: 56px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .bock>div:nth-child(2){
-      width: 755px;
-      height: 148px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .bock>div:nth-child(2)>div{
-      width: 66px;
-      height: 66px;
-      margin-left: 20px;
-
+    .fourth{
+      margin-top: 80px;
     }
 
-    .slide>div>div:nth-child(2)>div:nth-child(1){
-      background-image: url(./imege/5125_6194_2959.jpg);
-      background-size: cover;
-      border-radius: 20px;
+    .fifth{
+      margin-top: 80px;
     }
-    .slide>div>div:nth-child(2)>div:nth-child(2){
-      background-image: url(./imege/301051_301010_4052.jpg);
-      background-size: cover;
-      background-position: center;
-      border-radius: 20px;
-
-    }
-    .slide>div>div:nth-child(2)>div:nth-child(3){
-      background-image: url(./imege/260XS0W2M5_6.png);
-      background-size: cover;
-      background-position:center;
-      border-radius: 20px;
-
-    }
-
-    .footer{
-      width: 1920px;
-      height: 247px;
-      border: 1px solid black;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .footer>div:nth-child(1){
-      width: 313px;
-      height: 112px;
-      background-image: url(./imege/Group\ 10.png);
-      margin: 100px;
-    }
-
-    .footer>div:nth-child(2){
-      width: 648px;
-      height: 131px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
+    html{
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
   <div id="root">
-
-    <div class="logo">
-      <div></div>
-    </div>
-
-    <div class="menu">
-      <div>매장소개</div>
-      <div>메뉴</div>
-      <div>창업문의</div>
-      <div>고객센터</div>
-    </div>
-
-    <div class="dong">
-      <div></div>
-    </div>
-
-    <div class="mid">
-      <div>최고의 서비스 다정한 홍콩반점</div>
-    </div>
-
-    <div class="mid2">
-      <div>
-        <div>신선한재료</div>
+    <div class="first">
+      <div class="menu">
+        <div class="logo">
+          <img src="../image/만충반점.png" alt="">
+          충만반점
+        </div>
+        <li class="item1">소개</li>
+        <li class="item2">메뉴</li>
+        <li class="item3">창업문의</li>
+        <li class="item4">고객센터</li>
+        <li class="fcphn">창업문의 010-7564-1192</li>
+        <li class="upp">Top</li>
       </div>
-      <div>
-        <div>합리적인 가격</div>
-      </div>
-      <div>
-        <div>친절한응대</div>
+      <div class="main">
+        <div class="imgbox">
+          <li><img src="./image/one.png" alt=""></li>
+          <li><img src="./image/two.png" alt=""></li>
+          <li><img src="./image/three.png" alt=""></li>
+          <li><img src="./image/four.png" alt=""></li>
+        </div>
       </div>
     </div>
-
-    <div class="mid3">
-      <div></div>
-      <div>HOT PICK</div>
+    <div class="second">
+      <div>소개</div>
+      
+      <img src="./image/cook.png" alt="">
     </div>
-
-    <div class="slide">
-
-      <div class="jjam">
-        <div>
-          <div></div>
-          <div>
-            <div>문어짬뽕</div>
-            <div>PRICE : 8500$</div>
+    <div class="third">
+      <div class="tops">충만반점의 캐주얼한 해석</div>
+      <div class="bottoms">
+        <div class="arrowleft"><</div>
+        <div class="slider">
+          <div class="slides">
+            <li><img src="./image/sone.png" alt=""></li>
+            <li><img src="./image/stwo.png" alt=""></li>
+            <li><img src="./image/sthree.png" alt=""></li>
+            <li><img src="./image/sfour.png" alt=""></li>
           </div>
         </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-
-      <div class="jja">
-        <div>
-          <div></div>
-          <div>
-            <div>짜장면</div>
-            <div>PRICE : 4500$</div>
-          </div>
-        </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
-      </div>
-
-      <div class="bock">
-        <div>
-          <div></div>
-          <div>
-            <div>볶음밥</div>
-            <div>PRICE : 6500$</div>
-          </div>
-        </div>
-        <div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+        <div class="arrowright">></div>
       </div>
     </div>
-
-    <div class="footer">
-      <div></div>
-      <div>(주)만충코리아|사업자등록번호 211-86-00870|대표이사 손만충
-        주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층|팩스: 02-511-3864
-        본사 대표전화 및 가맹상담전화 : 02-549-3864| 가맹상담전화: 02-3447-0410
-        고객센터: 1544-2360|제휴문의 : cs@theborn.co.kr
-        
+    <div class="fourth">
+      <div class="mbox">메뉴</div>
+      <div class="cooks">
+        <div class="cookbox">
+          <div class="lux">
+            <div class="tangbox">
+              <img class="tang" src="./image/탕수육.png" alt="">
+              <div>튀김요리</div>
+            </div>
+            <div class="gobox">
+              <img class="gos" src="./image/고추잡채.png" alt="">
+              <div>볶음요리</div>
+            </div>
+          </div>
+          <div class="kb">
+            <div class="jjabox">
+              <img class="jjas" src="./image/짜장.png" alt="">
+              <div>식사류</div>
+            </div>
+            <div class="dinkbox">
+              <img class="dinks" src="./image/drink.png" alt="">
+              <div>음료/주류</div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="birdapp">
+        <img src="./image/배민.jpg" alt="">
+        <img src="./image/요기요.jpg" alt="">
+        <img src="./image/쿠팡.png" alt="">
+      </div>
+    </div>
+    <div class="fifth">
+      <div class="bossintro">
+        <div class="fch">창업문의</div>
+        <div class="bossbox">
+          <img src="./image/충만원.png" alt="">
+          <img src="./image/동종.png" alt="">
+          <img src="./image/코로나.png" alt="">
+        </div>
+      </div>
+      <div class="fchdata">
+        <div class="onetwo">
+          <img src="./image/ct1.png" alt="">
+          <img src="./image/ct2.png" alt="">
+        </div>
+        <div class="threefour">
+          <img src="./image/ct3.png" alt="">
+          <img src="./image/ct4.png" alt="">
+        </div>
+      </div>
+      <div class="tablesc">
+        <div class="fch2">창업비용</div>
+        <img src="./image/table.png" alt="">
+      </div>
+    </div>
+    <div class="sixth">
+      <div class="footerbox">
+        <img src="./image/만충반점test.png" alt="">
+        <img src="./image/위생.png" alt="">
+      </div>
+      <div class="gojibox">(주)만충코리아|사업자등록번호 211-86-00870 | 대표이사 손만충<br>
+        주소: 서울시 강남구 봉은사로 1길 39 유성빌딩 5~6층|팩스: 02-511-3864<br>
+        본사 대표전화 및 가맹상담전화 : 02-549-3864 | 가맹상담전화: 02-3447-0410
+      </div>
     </div>
   </div>
+  <script defer src="./JS/1-first.js"></script>
+  <script defer src="./JS/3-third.js"></script>
+  <script defer src="./JS/4-fourth.js"></script>
+  <script defer src="./JS/menu scroll.js"></script>
 </body>
 </html>

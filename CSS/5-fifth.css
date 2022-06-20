@@ -1,0 +1,157 @@
+.fifth{
+  width: 100vw;
+  height: 130vh;
+}
+.bossintro{
+  width: 100vw;
+  height: 34vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.fch{
+  width: 100vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #9E2428;
+  font-family: 'BMEuljiro10yearslater';
+  font-size: 2rem;
+  border-radius: 20px;
+}
+
+.bossbox{
+  width:55vw;
+  height: 25vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bossbox>img{
+  width: 17vw;
+  height: 20vh;
+}
+
+.fchdata{
+  width: 100vw;
+  height: 53vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fchdata>div>img{
+  width: 18vw;
+  height: 50vh;
+  margin: 10px;
+}
+
+.tablesc{
+  width: 100vw;
+  height: 43vh;
+  display: flex;flex-direction: column;
+  align-items: center;
+}
+
+.onetwo{
+  width: 50vw;
+  height: 33vh;
+  display:flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.threefour{
+  width: 50vw;
+  height: 33vh;
+  display:flex;
+  align-items: center;
+}
+
+.tablesc>img{
+  width: 62vw;
+  height: 31vh;
+  border: 1px solid #C80000;
+  margin-top: 20px;
+}
+
+.fch2{
+  width: 100vw;
+  height:3vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #9E2428;
+  font-family: 'BMEuljiro10yearslater';
+  font-size: 1.5rem;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+@media (max-width:1170px) {
+  .fch{
+    height: 4vh;
+  }
+ }
+  @media (max-width:1000px) {
+  .fchdata{
+    flex-direction: column;
+  }
+  .fchdata>div>img{
+    width: 35vw;
+    height: 25vh;
+    margin: 5px;
+  }
+
+  .onetwo{
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .threefour{
+    width: 100vw;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  }
+
+  @media (max-width:500px) {
+    .bossintro{
+      height: 57vh;
+    }
+    .bossbox{
+      width:90vw;
+      height: 51vh;
+      flex-direction: column;
+    }
+    
+    .bossbox>img{
+      width: 86.5vw;
+      height: 16vh;
+    }
+    
+    .tablesc>img{
+      width: 90vw;
+      height: 20vh;
+      border: 1px solid #C80000;
+      margin-top: 20px;
+    }
+
+    .tablesc{
+      height: 20vh;
+    }
+
+    .fifth{
+      height: 135vh;
+    }
+      
+  }
+    
+  
+

@@ -1,0 +1,42 @@
+.second{
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.second>div{
+  width: 100vw;
+  height:5vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  color: #9E2428;
+  font-family: 'BMEuljiro10yearslater';
+  font-size: 2rem;
+
+}
+.second>img{
+  width: 70vw;
+  height: 60vh;
+}
+@media (max-width:1000px) {
+  .second>img{
+    width: 95vw;
+    height: 40vh;
+  }
+  .second{
+    height: 50vh;
+  }
+}
+@media (max-width:500px) {
+  .second>img{
+    width: 95vw;
+    height: 25vh;
+  }
+  .second{
+    height: 30vh;
+  }
+}
