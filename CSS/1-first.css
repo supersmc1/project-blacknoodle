@@ -105,8 +105,19 @@
   .logo>img{
     display: none;
   }
+  .menu>li:nth-child(6){
+    font-size: 1rem;
+    right: 0px;
+    margin: 0;
+  }
 }
-
+@media (max-width:950px) {
+  .menu>li:nth-child(6){
+    font-size: 0.5rem;
+    right: 0px;
+    margin: 0;
+  }
+}
 @media (max-width:850px) {
   .menu>li{
     font-size: 1rem;
