@@ -10,6 +10,8 @@ window.addEventListener("scroll",function(event){
   const item3 = document.querySelector('.item3')
   const item4 = document.querySelector('.item4')
   const upp = document.querySelector('.upp')
+  const fcphn = document.querySelector('.fcphn')
+  
   item1.addEventListener('click',function(){
     window.scrollTo(0,1000)
   })
@@ -21,6 +23,13 @@ window.addEventListener("scroll",function(event){
   item3.addEventListener('click',function(){
     window.scrollTo(0,3138)
   })
+
+  fcphn.addEventListener('click',function(){
+    window.scrollTo(0,3138)
+    alert('전화번호가 복사 되었습니다.')
+  })
+
+  
 
   upp.addEventListener('click',function(){
     window.scrollTo(0,0)
